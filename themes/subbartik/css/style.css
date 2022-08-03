@@ -1,0 +1,392 @@
+/* 
+General Styles
+
+-------------------------------------------------------------------------------------------------------------
+*/
+body {
+	font-size:100%;
+}
+h1, h2, h3, h4, h5 {
+	font-family: "Prompt",sans-serif;
+}
+/* 
+includes/header.html
+
+-------------------------------------------------------------------------------------------------------------
+*/
+header#header {
+	border-bottom: 2px solid #18341F;
+	padding-top: .5rem;
+	padding-bottom: 1rem;
+}
+
+#main-header {
+	background-color: #f9efdc;
+	display: flex;
+	justify-content: space-between;
+	padding-top: .75rem;
+	height: 5.5rem;
+}
+
+/* Main Logo Style ----- */
+
+#logo-wrapper {
+	margin-left: 1rem;
+	width: 25rem;
+	padding-top: .5rem;
+}
+#let-er-buck-logo {
+	max-width: 5rem;
+	margin-right: -1rem;
+	margin-bottom: -.25rem;
+}
+#flex-wrapper {
+	display:flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+#logo-wrapper #city-text {
+	display:block;
+	color: #598262;
+	font-family: "Damion",cursive;
+	font-size: 2rem;
+	margin-bottom: -10px;
+}
+#pendleton-wordmark-logo{
+	display:block;
+ 	max-width: 19rem;
+}
+#slogan-wrapper {
+	margin-top: .15rem;
+}
+#main-slogan {
+	display: block;
+	position: absolute;
+	left: 0;
+	z-index: 999;
+	font-family: "Roboto Slab",serif;
+	font-weight: 300;
+	font-size: .7rem;
+	text-align: center;
+	text-transform: uppercase;
+	margin-left: 1.7rem;
+	margin-top: .2rem;
+	color: #ffffff;
+
+}
+#main-slogan-background-bottom {
+	border-bottom: .7rem solid #8C2818;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+}
+#main-slogan-background-top {
+	border-top: .7rem solid #8C2818;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+}
+#main-slogan-background-shadow {
+	border-bottom: .2rem solid #501614;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+}
+
+/* Main Navigation ----- */
+
+#main-navigation {
+	width: auto;
+	padding-top: .5rem;
+}
+#main-navigation nav {
+	font-family: "Prompt",sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	position: absolute;
+	bottom: 0;
+	right: 2rem;
+}
+#main-navigation nav a{
+	color: black;
+	text-align: right;
+	padding: 12px;
+}
+#back-to-pendleton-link  {
+	padding: .35rem .5rem;
+	font-family: "Roboto Slab",serif;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	background-color: #8C2818;
+	color: #ffffff;
+	text-align: center;
+	margin-right: 2rem;
+	margin-bottom: 10.5rem;
+}
+#main-navigation nav a:hover, #main-navigation nav a:focus{
+	background-color: #8C2818;
+	color: white;
+}
+#back-to-pendleton-link:hover, #back-to-pendleton-link:focus {
+	background-color: #598262
+}
+/* 
+includes/footer.html
+
+-------------------------------------------------------------------------------------------------------------
+*/
+
+.site-footer {
+	padding-top:1rem;
+	padding-bottom: 1rem;
+	background: #4e3b2a;
+	color: #ffffff;
+}
+#footer-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#footer-wrapper img{
+	width: 3.5rem;
+}
+#footer-wrapper p{
+	padding-top: 1rem;
+	font-size: 1.25em;
+}
+#footer-wrapper p:first-of-type {
+	padding-right: 1rem;
+}
+#footer-wrapper p:last-of-type {
+	padding-left: 1rem;
+}
+
+/* 
+Project Map Top of the Page
+
+-------------------------------------------------------------------------------------------------------------
+*/
+
+.layout--twocol-section--50-50 .field--type-text-with-summary {
+	padding-right: 20px;
+}
+
+.layout--twocol-section--50-50 .layout__region--second .block-views h2{
+	color: white;
+	margin: 0;
+	padding: .5rem 1rem;
+	background: #8C2818;
+}
+.layout--twocol-section--50-50 .layout__region--second .block-views .content {
+	margin: 0;
+}
+/* 
+Project Display
+
+-------------------------------------------------------------------------------------------------------------
+*/
+.layout--twocol-section--25-75 {
+ margin-top: 4rem;
+}
+
+/* For Project Display Grid */
+.view-projects-display-homepage .views-field-field-project-image a, .view-projects-display-homepage .views-view-grid.horizontal .views-row{
+	border-bottom: none;
+	font-family: "Roboto Slab",serif;
+}
+.view-projects-display-homepage .views-view-grid .views-row, .view-projects-display-homepage .views-view-grid .views-col {
+	padding: 0;
+	margin: 0;
+}
+
+/* Makes sure the img fills all available space regardless of size */
+.views-field-field-project-image img {
+	width: 100%;
+	height: 12.5rem;
+	object-fit: cover;
+}
+
+div.views-field.views-field-title {
+	margin-top: -.45rem;
+}
+div.views-field.views-field-title span.field-content {
+	display: block;
+	width: 100%;
+	text-align: center;
+	background: #598262;
+	border-right: .5px solid #47694E;
+	border-left: .5px solid #47694E;
+	padding: 10px 0;
+}
+
+div.views-field.views-field-title span.field-content a{
+	color: #ffffff;
+	border-bottom: none;
+}
+
+/* Hover Elements together Projects Display */
+
+.view-projects-display-homepage .views-view-grid .views-col:hover > .views-field-field-project-image img{
+	background: #efefef;
+	opacity: .65;	
+
+}
+.view-projects-display-homepage .views-view-grid .views-col:hover > div.views-field.views-field-title span.field-content {
+	color: white;
+	background: #8C2818;
+	text-decoration: underline;
+	border: none;
+}
+
+/* Project Display Left Sidebar Menu */
+
+.menu--project-status ul.menu {
+	padding: 0 2rem;
+	font-family: "Roboto Slab",serif;
+}
+
+.menu--project-status .menu-item {
+	padding:.45rem; 
+	background: #8C2818;
+	margin-bottom: .45rem;
+}
+.menu--project-status ul a {
+	color: white;
+	display: block;
+	border: 1px solid #598262;
+	font-size: 1.5rem;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.menu-item.menu-item--active-trail {
+	background: #598262;
+}
+ul.menu a.is-active {
+	background: #598262;
+	color: white;
+	border: 1px solid black;
+}
+
+/* Project Sidebar Menu On Hover Styles */
+
+.menu--project-status .menu-item:hover, .menu--project-status .menu-item:focus {
+	background: #598262;
+	text-decoration:underline;
+	color: white;
+}
+.menu--project-status .menu-item:hover > *{
+	background: #598262;
+	text-decoration:underline;
+	color: white;
+	border: 1px solid black;
+}
+ul.menu a.is-active:hover, ul.menu a.is-active:focus {
+	text-decoration:underline;
+}
+
+/* 
+Individual Project Page Styles
+
+-------------------------------------------------------------------------------------------------------------
+*/
+
+/*  Remove Project Image title */
+.field--name-field-project-image div.field__label {
+	display: none;
+}
+
+/* Project ID section styles */
+.block-field-blocknodeprojectfield-project-id .content,.block-field-blocknodeprojectfield-estimated-cost .content, .block-field-blocknodeprojectfield-actual-cost .content, .block-field-blocknodeprojectfield-project-type .content{
+	margin: 0;
+}
+.field--name-field-project-id {
+	background: #f8f8f8;
+	display:flex;
+	padding: .35rem .5rem;
+	justify-content: space-between;
+	border-top: 1px solid #ebebeb;
+	border-left: 1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
+}
+.field--name-field-estimated-cost {
+	display:flex;
+	padding: .35rem .5rem;
+	justify-content: space-between;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	border-left: 1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
+}
+.field--name-field-actual-cost {
+	background: #f8f8f8;
+	display:flex;
+	padding: .35rem .5rem;
+	justify-content: space-between;
+	border-bottom: 1px solid #ebebeb;
+	border-left: 1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
+}
+.field--name-field-project-type {
+	display:flex;
+	padding: .35rem .5rem;
+	justify-content: space-between;
+	border-bottom: 1px solid #ebebeb;
+	border-left: 1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
+}
+.field--name-field-project-type .field__label{
+	font-size: 1em;
+	font-weight: bold;
+	word-wrap: break-word;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	line-height: 1.5;
+}
+.field--name-field-project-status .field__label {
+	font-size: 1.429em;
+	line-height: 1.4;
+	margin-bottom: 2px;
+	font-family: "Prompt",sans-serif;
+}
+
+.block-field-blocknodeprojectfield-project-id .field__item,.block-field-blocknodeprojectfield-estimated-cost .field__item, .block-field-blocknodeprojectfield-actual-cost .field__item, .block-field-blocknodeprojectfield-project-type .field__item{
+	padding-right: 2rem;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Right Sidebar */
+.field--name-field-project-status .field__item a {
+	color: yellow;
+	font-size: 1.35rem;
+}
+ /* Padding of the right side bar */
+ div.content div.field.field--name-field-project-status.field--type-entity-reference.field--label-above, .block-field-blocknodeprojectfield-milestones{
+	padding: .45rem;
+ }
+div.content div.field.field--name-field-project-status.field--type-entity-reference.field--label-above,
+.block-field-blocknodeprojectfield-milestones {
+	background-color: #598262;
+	color: #ffffff;
+}
+
+.block-field-blocknodeprojectfield-milestones h2 {
+	margin-top: 0;
+}
+
+.field--name-field-milestones .field__label {
+	display: none;
+}
+.field--name-field-date .field__item{
+	color: yellow;
+}
+
+/* Additional Images */
+.field--name-field-additional-project-images- .field__items{
+	display: flex;
+	justify-content: space-evenly;
+}
+.field--name-field-additional-project-images- .field__items .field__item {
+	padding:5px;
+}
+.field--name-field-additional-project-images- .field__items .field__item:hover, .field--name-field-additional-project-images- .field__items .field__item:focus  {
+	background:efefef;
+	opacity:.7;
+}
